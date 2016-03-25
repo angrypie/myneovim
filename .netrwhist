@@ -1,4 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/el/.linuxbrew/Cellar/neovim/0.1.2/share/nvim/runtime'
-let g:netrw_dirhist_2='/home/el/Sandbox/golang/lesson/src/udp'
