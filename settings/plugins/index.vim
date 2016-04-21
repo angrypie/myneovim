@@ -6,13 +6,15 @@ Plug 'nanotech/jellybeans.vim'
 
 "Autocompletion
 Plug 'Shougo/deoplete.nvim'
-Plug 'zchee/deoplete-go', { 'do': 'make', 'for': 'go' }
+Plug 'zchee/deoplete-go', { 'do': 'make'}
+Plug 'zchee/deoplete-clang', { 'for': ['h', 'cpp', 'c', 'hpp'] }
 
 
 " Text Editor behavior
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim', { 'for': ['html', 'css'] }
 Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/syntastic'
 
 " Appearance
 Plug 'vim-airline/vim-airline'
@@ -26,6 +28,7 @@ Plug 'kien/ctrlp.vim'
 
 " Language support
 Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'octol/vim-cpp-enhanced-highlight'
 
 " Add plugins to &runtimepath
 call plug#end()

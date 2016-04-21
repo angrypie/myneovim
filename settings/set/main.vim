@@ -63,6 +63,10 @@ let g:user_emmet_leader_key='Z'
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_ignore_case = 1
 
+"	deoplete-clang
+let g:deoplete#sources#clang#libclang_path='/usr/lib/x86_64-linux-gnu/libclang.so'
+let g:deoplete#sources#clang#clang_header='/usr/lib/llvm-3.6/lib/clang'
+
 
 " Goyo (distraction free mode)
 let g:goyo_height = 100
@@ -70,4 +74,16 @@ let g:goyo_height = 100
 " Vim-go settings
 "Keyword shortcut for GoDoc
 let g:go_doc_keywordprg_enabled = 0
+
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++14'
+let g:syntastic_cpp_check_header = 1
 
