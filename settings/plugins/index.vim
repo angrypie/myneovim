@@ -5,7 +5,10 @@ call plug#begin("~/.config/nvim/plugged")
 Plug 'nanotech/jellybeans.vim'
 
 "Autocompletion
-Plug 'Shougo/deoplete.nvim'
+function! DoRemote(arg)
+	UpdateRemotePlugins
+endfunction
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote')}
 Plug 'zchee/deoplete-go', { 'do': 'make'}
 Plug 'zchee/deoplete-clang', { 'for': ['h', 'cpp', 'c', 'hpp'] }
 
