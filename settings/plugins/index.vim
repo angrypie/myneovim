@@ -9,8 +9,9 @@ function! DoRemote(arg)
 	UpdateRemotePlugins
 endfunction
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote')}
-Plug 'zchee/deoplete-go', { 'do': 'make'}
+Plug 'zchee/deoplete-go', { 'do': 'make', 'for': ['.go'] }
 Plug 'zchee/deoplete-clang', { 'for': ['h', 'cpp', 'c', 'hpp'] }
+Plug 'carlitux/deoplete-ternjs', { 'for': 'js', 'jsx' }
 
 
 " Text Editor behavior
@@ -30,8 +31,9 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'kien/ctrlp.vim'
 
 " Language support
-Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'fatih/vim-go', { 'for': ['go']} 
 Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'pangloss/vim-javascript', { 'for': ['js', 'jsx'] }
 
 " Add plugins to &runtimepath
 call plug#end()

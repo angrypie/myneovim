@@ -64,8 +64,8 @@ let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_ignore_case = 1
 
 "	deoplete-clang
-let g:deoplete#sources#clang#libclang_path='/usr/lib/x86_64-linux-gnu/libclang.so'
-let g:deoplete#sources#clang#clang_header='/usr/lib/llvm-3.6/lib/clang'
+let g:deoplete#sources#clang#libclang_path='/lib/libclang.so'
+let g:deoplete#sources#clang#clang_header='/lib/clang'
 
 
 " Goyo (distraction free mode)
@@ -74,6 +74,15 @@ let g:goyo_height = 100
 " Vim-go settings
 "Keyword shortcut for GoDoc
 let g:go_doc_keywordprg_enabled = 0
+let g:go_term_enabled = 1
+let g:go_term_mode = "split"
+let g:go_list_type = "quickfix"
+
+
+let g:go_metalinter_autosave = 1
+let g:go_metalinter_enabled = ['gotype', 'dupl', 'golint', 'deadcode']
+let g:go_metalinter_autosave_enabled = ['gotype']
+let g:go_auto_type_info = 1
 
 " Syntastic
 set statusline+=%#warningmsg#
@@ -86,4 +95,3 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = ' -std=c++14'
 let g:syntastic_cpp_check_header = 1
-
