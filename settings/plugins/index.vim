@@ -11,7 +11,7 @@ endfunction
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote')}
 Plug 'zchee/deoplete-go', { 'do': 'make', 'for': ['.go'] }
 Plug 'zchee/deoplete-clang', { 'for': ['h', 'cpp', 'c', 'hpp'] }
-Plug 'carlitux/deoplete-ternjs', { 'for': 'js', 'jsx' }
+Plug 'carlitux/deoplete-ternjs', { 'for': ['js', 'jsx'] }
 
 
 " Text Editor behavior
