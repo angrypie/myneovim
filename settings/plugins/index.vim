@@ -11,13 +11,10 @@ endfunction
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote')}
 Plug 'zchee/deoplete-go', { 'do': 'make', 'for': ['.go'] }
 Plug 'zchee/deoplete-clang', { 'for': ['h', 'cpp', 'c', 'hpp'] }
-<<<<<<< HEAD
+
 Plug 'carlitux/deoplete-ternjs'
 "Plug 'mhartington/deoplete-typescript'
 Plug 'gkz/vim-ls'
-=======
-Plug 'carlitux/deoplete-ternjs', { 'for': ['js', 'jsx'] }
->>>>>>> 4848076c0084f0471aeaa80baa9824b485567e1c
 
 
 " Text Editor behavior
