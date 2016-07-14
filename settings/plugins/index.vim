@@ -37,7 +37,10 @@ Plug 'Shougo/unite.vim'
 Plug 'fatih/vim-go', { 'for': ['go']} 
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-endwise'
 
 
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
