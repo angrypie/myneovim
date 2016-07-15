@@ -9,7 +9,7 @@ function! DoRemote(arg)
 	UpdateRemotePlugins
 endfunction
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote')}
-Plug 'zchee/deoplete-go', { 'do': 'make', 'for': ['.go'] }
+Plug 'zchee/deoplete-go', { 'do': 'make'}
 Plug 'zchee/deoplete-clang', { 'for': ['h', 'cpp', 'c', 'hpp'] }
 
 Plug 'carlitux/deoplete-ternjs'
@@ -21,7 +21,7 @@ Plug 'gkz/vim-ls'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim', { 'for': ['html', 'css'] }
 Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/syntastic', { 'for': ['cpp', 'h'] }
+Plug 'scrooloose/syntastic'
 
 " Appearance
 Plug 'vim-airline/vim-airline'
@@ -34,7 +34,7 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Shougo/unite.vim'
 
 " Language support
-Plug 'fatih/vim-go', { 'for': ['go']} 
+Plug 'fatih/vim-go'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'

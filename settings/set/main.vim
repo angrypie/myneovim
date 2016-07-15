@@ -74,15 +74,12 @@ let g:goyo_height = 100
 " Vim-go settings
 "Keyword shortcut for GoDoc
 let g:go_doc_keywordprg_enabled = 0
-let g:go_term_enabled = 1
 let g:go_term_mode = "split"
-let g:go_list_type = "quickfix"
+let g:go_term_enabled = 1
+"let g:go_list_type = "quickfix"
 
+let g:go_highlight_functions = 1
 
-let g:go_metalinter_autosave = 1
-let g:go_metalinter_enabled = ['gotype', 'dupl', 'golint', 'deadcode']
-let g:go_metalinter_autosave_enabled = ['gotype']
-let g:go_auto_type_info = 1
 
 " Syntastic
 set statusline+=%#warningmsg#
@@ -102,3 +99,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = ' -std=c++14'
 let g:syntastic_cpp_check_header = 1
+
+"syntastic go
+let g:syntastic_go_checkers = ['govet', 'gotype']
+
