@@ -10,7 +10,11 @@ syntax on
 set scrolloff=4 "show lines, top and bottom, while skroling
 set confirm "using dialog for warning
 
-set bg=dark
+
+"let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set background=dark " or dark
+"colorscheme solarized
+
 color jellybeans
 
 "set laststatus=2
@@ -102,4 +106,5 @@ let g:syntastic_cpp_check_header = 1
 
 "syntastic go
 let g:syntastic_go_checkers = ['govet', 'gotype']
+
 
