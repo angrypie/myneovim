@@ -14,7 +14,7 @@ Plug 'zchee/deoplete-clang', { 'for': ['h', 'cpp', 'c', 'hpp'] }
 "Plug 'zchee/deoplete-jedi', { 'for': ['py']}
 
 Plug 'carlitux/deoplete-ternjs'
-"Plug 'mhartington/deoplete-typescript'
+Plug 'mhartington/deoplete-typescript'
 Plug 'gkz/vim-ls'
 
 
@@ -41,14 +41,12 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 
-"Plug 'kern/vim-es7'
-
 Plug 'leafgarland/typescript-vim'
 Plug 'neovimhaskell/haskell-vim', { 'for': ['hs'] }
 Plug 'tpope/vim-endwise', { 'for': [ 'rb' ] }
 Plug 'vim-ruby/vim-ruby', { 'for': ['rb'] }
 Plug 'klen/python-mode', { 'for': ['py'] }
-Plug 'flowtype/vim-flow', { 'for': ['js', 'jsx'] }
+Plug 'flowtype/vim-flow'
 
 
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }

@@ -66,6 +66,8 @@ let g:user_emmet_leader_key='Z'
 "	Eneble at startup
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_ignore_case = 1
+"let g:deoplete#sources#tss#javascript_support = 1
+
 
 "	deoplete-clang
 let g:deoplete#sources#clang#libclang_path='/lib/libclang.so'
@@ -94,6 +96,9 @@ set statusline+=%*
 no <C-p> :Unite -start-insert file_rec<CR>
 no <Leader>b :Unite -start-insert buffer<CR>
 
+"js
+let g:javascript_plugin_flow = 1
+
 "jsx
 let g:jsx_ext_required = 0
 
@@ -106,5 +111,7 @@ let g:syntastic_cpp_check_header = 1
 
 "syntastic go
 let g:syntastic_go_checkers = ['govet', 'gotype']
+
+
 
 
