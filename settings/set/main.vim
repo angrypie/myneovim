@@ -4,18 +4,11 @@ set splitbelow
 set splitright
 
 "interface setings
-set t_Co=256 "256 color
 set number
 syntax on
 set scrolloff=4 "show lines, top and bottom, while skroling
 set confirm "using dialog for warning
 
-
-"let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-set background=dark " or dark
-"colorscheme solarized
-
-color jellybeans
 
 "set laststatus=2
 set noswapfile
@@ -28,9 +21,9 @@ set incsearch
 set ignorecase
 "
 "tab setings
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set noexpandtab
 
 "set colorcolumn=110
@@ -55,9 +48,7 @@ let g:airline_theme = "raven"
 
 
 "Emmet-vim
-"	enable just for .html, .css and .tag
 let g:user_emmet_install_global = 0
-autocmd FileType html,css,tag EmmetInstall
 "	remap the default <C-Y> leader
 let g:user_emmet_leader_key='Z'
 
@@ -112,6 +103,7 @@ let g:syntastic_cpp_check_header = 1
 "syntastic go
 let g:syntastic_go_checkers = ['govet', 'gotype']
 
-
-
-
+"vim-javascript
+let g:javascript_plugin_flow = 1
+"flowtype
+let g:flow#autoclose = 1

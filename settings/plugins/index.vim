@@ -5,6 +5,7 @@ call plug#begin("~/.config/nvim/plugged")
 Plug 'nanotech/jellybeans.vim'
 "Plug 'altercation/vim-colors-solarized'
 Plug 'frankier/neovim-colors-solarized-truecolor-only'
+Plug 'morhetz/gruvbox'
 "
 
 "Autocompletion
@@ -12,8 +13,9 @@ Plug 'Shougo/deoplete.nvim'
 Plug 'zchee/deoplete-go', { 'do': 'make'}
 Plug 'zchee/deoplete-clang', { 'for': ['h', 'cpp', 'c', 'hpp'] }
 "Plug 'zchee/deoplete-jedi', { 'for': ['py']}
+Plug 'steelsojka/deoplete-flow'
 
-Plug 'carlitux/deoplete-ternjs'
+"Plug 'carlitux/deoplete-ternjs'
 Plug 'mhartington/deoplete-typescript'
 Plug 'gkz/vim-ls'
 
