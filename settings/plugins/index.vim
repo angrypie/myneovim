@@ -10,13 +10,13 @@ Plug 'morhetz/gruvbox'
 
 "Autocompletion
 Plug 'Shougo/deoplete.nvim'
-Plug 'zchee/deoplete-go', { 'do': 'make'}
-Plug 'zchee/deoplete-clang', { 'for': ['h', 'cpp', 'c', 'hpp'] }
-"Plug 'zchee/deoplete-jedi', { 'for': ['py']}
-Plug 'steelsojka/deoplete-flow'
+Plug 'zchee/deoplete-go', { 'do': 'make', 'for': 'go'}
+"Plug 'zchee/deoplete-clang', { 'for': ['h', 'cpp', 'c', 'hpp'] }
+Plug 'zchee/deoplete-jedi', { 'for': 'python'}
+Plug 'steelsojka/deoplete-flow', {'for': 'javascript' }
 
 "Plug 'carlitux/deoplete-ternjs'
-Plug 'mhartington/deoplete-typescript'
+Plug 'mhartington/deoplete-typescript', { 'for': 'typescript' }
 Plug 'gkz/vim-ls'
 
 
@@ -39,16 +39,17 @@ Plug 'Shougo/unite.vim'
 
 " Language support
 Plug 'fatih/vim-go'
-Plug 'octol/vim-cpp-enhanced-highlight'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
+Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['cpp', 'h'] }
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'mxw/vim-jsx', {'for': ['javascript', 'typescript'] }
+Plug 'bash-support.vim', { 'for': ['sh', 'bash'] }
 
-Plug 'leafgarland/typescript-vim'
-Plug 'neovimhaskell/haskell-vim', { 'for': ['hs'] }
-Plug 'tpope/vim-endwise', { 'for': [ 'rb' ] }
-Plug 'vim-ruby/vim-ruby', { 'for': ['rb'] }
-Plug 'klen/python-mode', { 'for': ['py'] }
-Plug 'flowtype/vim-flow'
+Plug 'leafgarland/typescript-vim', {'for': 'typescript' }
+Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell'}
+Plug 'tpope/vim-endwise', { 'for': 'ruby' }
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
+Plug 'klen/python-mode', { 'for': 'python' }
+Plug 'flowtype/vim-flow', {'for': 'javascript' }
 
 
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
