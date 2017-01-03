@@ -3,6 +3,8 @@ let mapleader=";"
 set splitbelow
 set splitright
 
+filetype plugin on
+
 "interface setings
 set number
 syntax on
@@ -107,3 +109,12 @@ let g:syntastic_go_checkers = ['govet', 'gotype']
 let g:javascript_plugin_flow = 1
 "flowtype
 let g:flow#autoclose = 1
+
+"Use localy installed flow
+let local_flow = finddir('node_modules', '.;') . '/.bin/flow'
+if matchstr(local_flow, "^\/\\w") == ''
+    let local_flow= getcwd() . "/" . local_flow
+endif
+if executable(local_flow)
+  let g:flow#flowpath = local_flow
+endif
