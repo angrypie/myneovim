@@ -1,6 +1,9 @@
 
 call plug#begin("~/.config/nvim/plugged")
 
+
+Plug 'easymotion/vim-easymotion'
+
 " Color-shemes
 Plug 'nanotech/jellybeans.vim'
 "Plug 'altercation/vim-colors-solarized'
