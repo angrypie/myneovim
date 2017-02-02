@@ -66,7 +66,6 @@ let g:deoplete#enable_ignore_case = 1
 let g:deoplete#sources#clang#libclang_path='/lib/libclang.so'
 let g:deoplete#sources#clang#clang_header='/lib/clang'
 
-
 " Goyo (distraction free mode)
 let g:goyo_height = 100
 

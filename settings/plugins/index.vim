@@ -27,8 +27,7 @@ Plug 'gkz/vim-ls'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim', { 'for': ['html', 'css'] }
 Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/syntastic', { 'for': ['cpp', 'h', 'c', 'go', 'java', 'ts', 'tsx'] }
-"Plug 'scrooloose/syntastic'
+Plug 'scrooloose/syntastic', { 'for': ['cpp', 'h', 'c', 'go', 'java', 'ts', 'tsx', 'php'] }
 
 " Appearance
 Plug 'vim-airline/vim-airline'
@@ -53,7 +52,6 @@ Plug 'tpope/vim-endwise', { 'for': 'ruby' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'klen/python-mode', { 'for': 'python' }
 Plug 'flowtype/vim-flow', {'for': 'javascript' }
-
 
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'Quramy/tsuquyomi'
