@@ -41,7 +41,6 @@ set incsearch
 
 "vim-slime plugin setting for tmux
 let g:slime_target = "tmux"
-let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 
 " Airline
 let g:airline_theme = "raven"
@@ -74,7 +73,7 @@ let g:goyo_height = 100
 let g:go_doc_keywordprg_enabled = 0
 let g:go_term_mode = "split"
 let g:go_term_enabled = 1
-"let g:go_list_type = "quickfix"
+let g:go_list_type = "quickfix"
 
 let g:go_highlight_functions = 1
 
@@ -99,7 +98,9 @@ let g:syntastic_cpp_compiler_options = ' -std=c++14'
 let g:syntastic_cpp_check_header = 1
 
 "syntastic go
-let g:syntastic_go_checkers = ['govet', 'gotype']
+let g:syntastic_go_checkers = ['gotype', 'errcheck']
+let g:go_fmt_command = "goimports"
+
 
 "vim-javascript
 let g:javascript_plugin_flow = 1
@@ -117,3 +118,18 @@ if executable(local_flow)
 	let g:deoplete#sources#flow#flow_bin = local_flow
 endif
 
+let g:multi_cursor_exit_from_insert_mode = 0
+let g:multi_cursor_quit_key='<C-c>'
+nnoremap <C-c> :call multiple_cursors#quit()<CR>
+
+
+" Neosnippet
+"
+" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
+imap <C-s>     <Plug>(neosnippet_expand_or_jump)
+smap <C-s>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-s>     <Plug>(neosnippet_expand_target)
+
+let g:neosnippet#snippets_directory='~/.config/nvim/plugged/vim-snippets/snippets'
+
+let g:deoplete#file#enable_buffer_path = 1

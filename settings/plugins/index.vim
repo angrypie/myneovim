@@ -25,7 +25,7 @@ Plug 'gkz/vim-ls'
 
 " Text Editor behavior
 Plug 'jiangmiao/auto-pairs'
-Plug 'mattn/emmet-vim', { 'for': ['html', 'css'] }
+Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'javascript'] }
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/syntastic', { 'for': ['cpp', 'h', 'c', 'go', 'java', 'ts', 'tsx', 'php'] }
 
@@ -55,7 +55,13 @@ Plug 'flowtype/vim-flow', {'for': 'javascript' }
 
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'Quramy/tsuquyomi'
+"Plug 'mhartington/nvim-typescript', { 'for': 'typescript' }
 
+Plug 'terryma/vim-multiple-cursors'
+
+Plug 'Shougo/neosnippet'
+Plug 'Shougo/neosnippet-snippets'
+Plug 'honza/vim-snippets'
 
 
 " Add plugins to &runtimepath
