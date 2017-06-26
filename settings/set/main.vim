@@ -77,6 +77,11 @@ let g:go_list_type = "quickfix"
 
 let g:go_highlight_functions = 1
 
+let g:go_fmt_command = "goimports"
+let g:go_metalinter_enabled = ['gotype', 'vet', 'golint'] 
+let g:go_metalinter_autosave = 1
+let g:go_metalinter_autosave_enabled = ['gotype', 'vet',]
+
 
 " Syntastic
 set statusline+=%#warningmsg#
@@ -98,8 +103,7 @@ let g:syntastic_cpp_compiler_options = ' -std=c++14'
 let g:syntastic_cpp_check_header = 1
 
 "syntastic go
-let g:syntastic_go_checkers = ['gotype', 'errcheck']
-let g:go_fmt_command = "goimports"
+let g:syntastic_go_checkers = []
 
 
 "vim-javascript
@@ -133,3 +137,11 @@ xmap <C-s>     <Plug>(neosnippet_expand_target)
 let g:neosnippet#snippets_directory='~/.config/nvim/plugged/vim-snippets/snippets'
 
 let g:deoplete#file#enable_buffer_path = 1
+
+
+"This will close vim if the quickfix window is the only window visible (and only tab).
+aug QFClose
+		au!
+	au WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&buftype") == "quickfix"|q|endif
+aug END
+

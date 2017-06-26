@@ -27,7 +27,7 @@ Plug 'gkz/vim-ls'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'javascript'] }
 Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/syntastic', { 'for': ['cpp', 'h', 'c', 'go', 'java', 'ts', 'tsx', 'php'] }
+Plug 'scrooloose/syntastic', { 'for': ['cpp', 'h', 'c', 'java', 'ts', 'tsx', 'php'] }
 
 " Appearance
 Plug 'vim-airline/vim-airline'
@@ -44,7 +44,6 @@ Plug 'fatih/vim-go'
 Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['cpp', 'h'] }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx', {'for': ['javascript', 'typescript'] }
-Plug 'bash-support.vim', { 'for': ['sh', 'bash'] }
 
 Plug 'leafgarland/typescript-vim', {'for': 'typescript' }
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell'}
