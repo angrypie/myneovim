@@ -13,6 +13,7 @@ Plug 'morhetz/gruvbox'
 
 "Autocompletion
 Plug 'Shougo/deoplete.nvim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-go', { 'do': 'make', 'for': 'go'}
 "Plug 'zchee/deoplete-clang', { 'for': ['h', 'cpp', 'c', 'hpp'] }
 Plug 'zchee/deoplete-jedi', { 'for': 'python'}
@@ -27,7 +28,7 @@ Plug 'gkz/vim-ls'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'javascript'] }
 Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/syntastic', { 'for': ['cpp', 'h', 'c', 'java', 'ts', 'tsx', 'php'] }
+Plug 'scrooloose/syntastic', { 'for': ['cpp', 'go', 'h', 'c', 'java', 'ts', 'tsx', 'php', 'solidity'] }
 
 " Appearance
 Plug 'vim-airline/vim-airline'
@@ -49,7 +50,7 @@ Plug 'leafgarland/typescript-vim', {'for': 'typescript' }
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell'}
 Plug 'tpope/vim-endwise', { 'for': 'ruby' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
-Plug 'klen/python-mode', { 'for': 'python' }
+"Plug 'klen/python-mode', { 'for': 'python' }
 Plug 'flowtype/vim-flow', {'for': 'javascript' }
 
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
@@ -61,6 +62,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'honza/vim-snippets'
+Plug 'tomlion/vim-solidity'
 
 
 " Add plugins to &runtimepath
