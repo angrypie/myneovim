@@ -58,6 +58,7 @@ no Q X
 no J C
 no K V
 no X B
+no B N
 no W <
 no V >
 "no Z ?
