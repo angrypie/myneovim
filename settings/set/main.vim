@@ -13,7 +13,7 @@ set confirm "using dialog for warning
 
 
 "set laststatus=2
-set noswapfile
+"set noswapfile
 set visualbell
 
 
@@ -44,7 +44,6 @@ let g:slime_target = "tmux"
 
 " Airline
 let g:airline_theme = "raven"
-"let g:airline_powerline_fonts = 1
 
 
 
@@ -104,6 +103,10 @@ let g:syntastic_cpp_check_header = 1
 
 "syntastic go
 "let g:syntastic_go_checkers = ['go vet']
+
+
+"Ale linter
+let b:ale_linters = {'javascript': ['eslint']}
 
 
 "vim-javascript
