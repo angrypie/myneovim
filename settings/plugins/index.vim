@@ -21,8 +21,7 @@ Plug 'scrooloose/nerdcommenter'
 
 
 " Syntax ceheck
-"Plug 'scrooloose/syntastic', { 'for': ['cpp', 'go', 'h', 'c', 'java', 'ts', 'tsx', 'php', 'solidity'] }
-Plug 'w0rp/ale'
+Plug 'w0rp/ale', {'for': ['go']}
 
 " Appearance
 Plug 'vim-airline/vim-airline'
@@ -45,6 +44,9 @@ Plug 'tpope/vim-endwise', { 'for': 'ruby' }
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 
 Plug 'terryma/vim-multiple-cursors'
+" Markdown
+Plug 'godlygeek/tabular'
+Plug 'gabrielelana/vim-markdown'
 
 
 " ==== Tools

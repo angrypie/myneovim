@@ -77,36 +77,20 @@ let g:go_list_type = "quickfix"
 let g:go_highlight_functions = 1
 
 let g:go_fmt_command = "goimports"
-let g:go_metalinter_enabled = ['gotype', 'vet', 'errcheck'] 
+let g:go_metalinter_enabled = ['vet'] 
 let g:go_metalinter_autosave = 1
 let g:go_metalinter_autosave_enabled = ['vet']
 
 
-" Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-" Unite
-no <C-p> :Unite -start-insert file_rec<CR>
-no <Leader>b :Unite -start-insert buffer<CR>
 
 "jsx
 let g:jsx_ext_required = 0
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_cpp_compiler = 'clang++'
-let g:syntastic_cpp_compiler_options = ' -std=c++14'
-let g:syntastic_cpp_check_header = 1
-
-"syntastic go
-"let g:syntastic_go_checkers = ['go vet']
 
 
 "Ale linter
 let b:ale_linters = {'javascript': ['eslint']}
+let g:ale_sign_column_always = 1
 
 
 "vim-javascript
@@ -147,4 +131,3 @@ aug QFClose
 		au!
 	au WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&buftype") == "quickfix"|q|endif
 aug END
-
