@@ -21,7 +21,7 @@ Plug 'scrooloose/nerdcommenter'
 
 
 " Syntax ceheck
-Plug 'w0rp/ale', {'for': ['go', 'javascript'] }
+Plug 'w0rp/ale', {'for': ['go'] }
 
 " Appearance
 Plug 'vim-airline/vim-airline'
@@ -36,6 +36,7 @@ Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['cpp', 'h'] }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx', {'for': ['javascript', 'typescript'] }
 Plug 'flowtype/vim-flow', {'for': 'javascript' }
+Plug 'jpalardy/vim-slime'
 
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell'}
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
