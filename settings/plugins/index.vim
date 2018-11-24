@@ -6,7 +6,6 @@ Plug 'easymotion/vim-easymotion'
 
 " Appearance
 Plug 'nanotech/jellybeans.vim'
-"
 
 "Autocompletion
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -21,7 +20,7 @@ Plug 'scrooloose/nerdcommenter'
 
 
 " Syntax ceheck
-Plug 'w0rp/ale', {'for': ['go'] }
+Plug 'w0rp/ale', {'for': ['go', 'javascript'] }
 
 " Appearance
 Plug 'vim-airline/vim-airline'
@@ -34,7 +33,7 @@ Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 Plug 'fatih/vim-go'
 Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['cpp', 'h'] }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-Plug 'mxw/vim-jsx', {'for': ['javascript', 'typescript'] }
+Plug 'mxw/vim-jsx', {'for': ['javascript'] }
 Plug 'flowtype/vim-flow', {'for': 'javascript' }
 Plug 'jpalardy/vim-slime'
 
@@ -43,11 +42,18 @@ Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'tpope/vim-endwise', { 'for': 'ruby' }
 
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+Plug 'Shougo/denite.nvim'
 
 Plug 'terryma/vim-multiple-cursors'
 " Markdown
 Plug 'godlygeek/tabular'
 Plug 'gabrielelana/vim-markdown'
+
+" Typescript syntax
+Plug 'HerringtonDarkholme/yats.vim', { 'for': 'typescript' }
+" Typescript tooling for neovim
+Plug 'mhartington/nvim-typescript', { 'do': './install.sh', 'for': 'typescript' }
+
 
 
 " ==== Tools

@@ -89,7 +89,7 @@ let g:jsx_ext_required = 0
 
 
 "Ale linter
-let b:ale_linters = {'javascript': ['eslint']}
+let g:ale_linters = {'javascript': ['eslint']}
 let g:ale_sign_column_always = 1
 "let g:ale_lint_on_text_changed = 'never'
 "let g:ale_lint_on_enter = 0
