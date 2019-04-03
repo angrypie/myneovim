@@ -20,7 +20,7 @@ Plug 'scrooloose/nerdcommenter'
 
 
 " Syntax ceheck
-Plug 'w0rp/ale', {'for': ['go', 'javascript'] }
+Plug 'w0rp/ale', {'for': ['javascript'] }
 
 " Appearance
 Plug 'vim-airline/vim-airline'
