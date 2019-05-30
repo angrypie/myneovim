@@ -34,6 +34,7 @@ Plug 'fatih/vim-go'
 Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['cpp', 'h'] }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx', {'for': ['javascript'] }
+Plug 'jxnblk/vim-mdx-js', { 'for': ['mdx'] }
 Plug 'flowtype/vim-flow', {'for': 'javascript' }
 Plug 'jpalardy/vim-slime'
 
@@ -47,7 +48,7 @@ Plug 'Shougo/denite.nvim'
 Plug 'terryma/vim-multiple-cursors'
 " Markdown
 Plug 'godlygeek/tabular'
-Plug 'gabrielelana/vim-markdown'
+Plug 'gabrielelana/vim-markdown', { 'for': ['mdx'] }
 
 " Typescript syntax
 Plug 'HerringtonDarkholme/yats.vim', { 'for': 'typescript' }
