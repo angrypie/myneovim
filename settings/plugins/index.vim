@@ -36,6 +36,10 @@ Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx', {'for': ['javascript'] }
 Plug 'jxnblk/vim-mdx-js', { 'for': ['mdx'] }
 Plug 'flowtype/vim-flow', {'for': 'javascript' }
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'branch': 'release/1.x',
+  \ 'for': ['javascript', 'typescript', 'css', 'json', 'markdown', 'html' ] }
 Plug 'jpalardy/vim-slime'
 
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell'}
@@ -63,6 +67,7 @@ Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'javascript'] }
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'honza/vim-snippets'
+
 
 
 " Add plugins to &runtimepath

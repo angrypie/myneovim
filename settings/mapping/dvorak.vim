@@ -46,7 +46,9 @@ no A A
 no O S
 no E D
 no U F
-no I G
+"no I G
+"Set c mark before going to the bottom
+no I mcG
 no D H
 no H J
 no T K
@@ -67,7 +69,9 @@ no ] =
 no { _
 no } +
 
-no ii gg
+"no ii gg
+"set 'c' mark befor going to the top
+no ii mcgg
 
 ino <C-e> <C-d>
 ino <C-y> <C-t>
