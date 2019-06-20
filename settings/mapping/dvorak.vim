@@ -46,9 +46,7 @@ no A A
 no O S
 no E D
 no U F
-"no I G
-"Set c mark before going to the bottom
-no I mcG
+no I G
 no D H
 no H J
 no T K
