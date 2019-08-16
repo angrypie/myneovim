@@ -81,12 +81,11 @@ let g:go_metalinter_enabled = ['vet']
 let g:go_metalinter_autosave = 1
 let g:go_metalinter_autosave_enabled = ['vet']
 
-
-
 "jsx
 let g:jsx_ext_required = 0
 
-
+"fzf fuzzy search
+map <C-p> :FZF<CR>
 
 "Ale linter
 let g:ale_linters = {'javascript': ['eslint']}
@@ -113,16 +112,6 @@ endif
 let g:multi_cursor_exit_from_insert_mode = 0
 let g:multi_cursor_quit_key='<C-c>'
 nnoremap <C-c> :call multiple_cursors#quit()<CR>
-
-
-" Neosnippet
-"
-" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
-imap <C-s>     <Plug>(neosnippet_expand_or_jump)
-smap <C-s>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-s>     <Plug>(neosnippet_expand_target)
-
-let g:neosnippet#snippets_directory='~/.config/nvim/plugged/vim-snippets/snippets'
 
 let g:deoplete#file#enable_buffer_path = 1
 

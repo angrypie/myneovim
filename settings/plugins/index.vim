@@ -39,7 +39,7 @@ Plug 'flowtype/vim-flow', {'for': 'javascript' }
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'branch': 'release/1.x',
-  \ 'for': ['javascript', 'typescript', 'css', 'json', 'markdown', 'html' ] }
+  \ 'for': ['javascript', 'typescript', 'css', 'json', 'markdown', 'markdown.mdx', 'html' ] }
 Plug 'jpalardy/vim-slime'
 
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell'}
@@ -48,6 +48,9 @@ Plug 'tpope/vim-endwise', { 'for': 'ruby' }
 
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'Shougo/denite.nvim'
+" fuzzy search
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 
 Plug 'terryma/vim-multiple-cursors'
 " Markdown
@@ -64,9 +67,6 @@ Plug 'mhartington/nvim-typescript', { 'do': './install.sh', 'for': 'typescript' 
 " ==== Tools
 " Snippets
 Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'javascript'] }
-Plug 'Shougo/neosnippet'
-Plug 'Shougo/neosnippet-snippets'
-Plug 'honza/vim-snippets'
 
 
 
