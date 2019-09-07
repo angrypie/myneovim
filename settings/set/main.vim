@@ -10,6 +10,7 @@ set number
 syntax on
 set scrolloff=4 "show lines, top and bottom, while skroling
 set confirm "using dialog for warning
+set noshowmode
 
 
 "set laststatus=2
@@ -32,18 +33,20 @@ set noexpandtab
 "highlight ColorColumn ctermbg=darkgrey
 
 
+"indent settings
 set showcmd 
 set smartindent
 set autoindent
 
+" search settins
 set nohlsearch
 set incsearch
 
 "vim-slime plugin setting for tmux
 let g:slime_target = "tmux"
 
-" Airline
-let g:airline_theme = "raven"
+" Status line
+let g:lightline = { 'colorscheme': 'jellybeans' }
 
 
 

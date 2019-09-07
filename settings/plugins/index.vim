@@ -1,4 +1,3 @@
-
 call plug#begin("~/.config/nvim/plugged")
 
 
@@ -11,7 +10,7 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-go', { 'do': 'make', 'for': 'go'}
 Plug 'steelsojka/deoplete-flow', {'for': 'javascript' }
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+Plug 'carlitux/deoplete-ternjs', { 'for': 'javascript', 'do': 'npm install -g tern' }
 
 
 " Text Editor behavior
@@ -23,39 +22,36 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'w0rp/ale', {'for': ['javascript'] }
 
 " Appearance
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" ==========
+" A light statusline plugin for Vim
+Plug 'itchyny/lightline.vim'
+" Distraction-free writing in Vim
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 
 
 
 " Language support
+" ================
 Plug 'fatih/vim-go'
-Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['cpp', 'h'] }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx', {'for': ['javascript'] }
-Plug 'jxnblk/vim-mdx-js', { 'for': ['mdx'] }
+Plug 'jxnblk/vim-mdx-js', { 'for': ['markdown.mdx'] }
 Plug 'flowtype/vim-flow', {'for': 'javascript' }
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'branch': 'release/1.x',
   \ 'for': ['javascript', 'typescript', 'css', 'json', 'markdown', 'markdown.mdx', 'html' ] }
-Plug 'jpalardy/vim-slime'
 
-Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell'}
-Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
-Plug 'tpope/vim-endwise', { 'for': 'ruby' }
+Plug 'jpalardy/vim-slime', { 'for': 'lisp' }
 
-Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-Plug 'Shougo/denite.nvim'
-" fuzzy search
+" Fuzzy find
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
 Plug 'terryma/vim-multiple-cursors'
 " Markdown
-Plug 'godlygeek/tabular'
-Plug 'gabrielelana/vim-markdown', { 'for': ['mdx'] }
+Plug 'godlygeek/tabular', 
+Plug 'gabrielelana/vim-markdown', { 'for': ['markdown.mdx', 'markdown'] }
 
 " Typescript syntax
 Plug 'HerringtonDarkholme/yats.vim', { 'for': 'typescript' }
