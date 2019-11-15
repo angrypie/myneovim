@@ -90,9 +90,9 @@ let g:jsx_ext_required = 0
 "fzf fuzzy search
 map <C-p> :FZF<CR>
 
+"DEPRECATED
 "Ale linter
-let g:ale_linters = {'javascript': ['eslint']}
-"let g:ale_sign_column_always = 1
+"let g:ale_linters = {'javascript': ['eslint']}
 "let g:ale_lint_on_text_changed = 'never'
 "let g:ale_lint_on_enter = 0
 
@@ -100,6 +100,26 @@ let g:ale_linters = {'javascript': ['eslint']}
 let g:javascript_plugin_flow = 1
 "flowtype
 let g:flow#autoclose = 1
+
+"coc.nvim settings
+"=================
+" Remap keys for gotos
+"
+nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
+nmap <leader>rn <Plug>(coc-rename)
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+" Use `[g` and `]g` to navigate diagnostics
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
+"Always show sign column
+set signcolumn=yes
+"Highlight errors background
+hi CocUnderline ctermbg=DarkGrey
+
 
 "Use localy installed flow
 "=========================
