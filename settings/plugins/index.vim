@@ -7,20 +7,12 @@ Plug 'easymotion/vim-easymotion'
 Plug 'nanotech/jellybeans.vim'
 
 "Autocompletion
-"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-"Plug 'zchee/deoplete-go', { 'do': 'make', 'for': 'go'}
-"Plug 'steelsojka/deoplete-flow', {'for': 'javascript' }
-"Plug 'carlitux/deoplete-ternjs', { 'for': 'javascript', 'do': 'npm install -g tern' }
-
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Text Editor behavior
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 
-
-" Syntax ceheck
-"Plug 'w0rp/ale', {'for': ['javascript'] }
 
 " Appearance
 " ==========

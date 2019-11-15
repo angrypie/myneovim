@@ -56,17 +56,6 @@ let g:user_emmet_install_global = 0
 let g:user_emmet_leader_key='Z'
 
 
-"Deoplete config
-"	Eneble at startup
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#enable_ignore_case = 1
-"let g:deoplete#sources#tss#javascript_support = 1
-
-
-"	deoplete-clang
-let g:deoplete#sources#clang#libclang_path='/lib/libclang.so'
-let g:deoplete#sources#clang#clang_header='/lib/clang'
-
 " Goyo (distraction free mode)
 let g:goyo_height = 100
 
@@ -90,12 +79,6 @@ let g:jsx_ext_required = 0
 "fzf fuzzy search
 map <C-p> :FZF<CR>
 
-"DEPRECATED
-"Ale linter
-"let g:ale_linters = {'javascript': ['eslint']}
-"let g:ale_lint_on_text_changed = 'never'
-"let g:ale_lint_on_enter = 0
-
 "vim-javascript
 let g:javascript_plugin_flow = 1
 "flowtype
@@ -114,29 +97,15 @@ nmap <silent> gr <Plug>(coc-references)
 " Use `[g` and `]g` to navigate diagnostics
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
-
 "Always show sign column
 set signcolumn=yes
 "Highlight errors background
 hi CocUnderline ctermbg=DarkGrey
 
 
-"Use localy installed flow
-"=========================
-let local_flow = finddir('node_modules', '.;') . '/.bin/flow'
-if matchstr(local_flow, "^\/\\w") == ''
-	let local_flow= getcwd() . "/" . local_flow
-endif
-if executable(local_flow)
-	let g:flow#flowpath = local_flow
-	let g:deoplete#sources#flow#flow_bin = local_flow
-endif
-
 let g:multi_cursor_exit_from_insert_mode = 0
 let g:multi_cursor_quit_key='<C-c>'
 nnoremap <C-c> :call multiple_cursors#quit()<CR>
-
-let g:deoplete#file#enable_buffer_path = 1
 
 
 "This will close vim if the quickfix window is the only window visible (and only tab).
