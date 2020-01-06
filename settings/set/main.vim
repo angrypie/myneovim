@@ -87,6 +87,8 @@ let g:flow#autoclose = 1
 "coc.nvim settings
 "=================
 " Remap keys for gotos
+let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier']
+"
 "
 nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
 nmap <leader>rn <Plug>(coc-rename)
@@ -108,8 +110,11 @@ let g:multi_cursor_quit_key='<C-c>'
 nnoremap <C-c> :call multiple_cursors#quit()<CR>
 
 
+
+
 "This will close vim if the quickfix window is the only window visible (and only tab).
 aug QFClose
 		au!
 	au WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&buftype") == "quickfix"|q|endif
 aug END
+

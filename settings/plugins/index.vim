@@ -47,10 +47,9 @@ Plug 'godlygeek/tabular',
 Plug 'gabrielelana/vim-markdown', { 'for': ['markdown.mdx', 'markdown'] }
 
 " Typescript syntax
-Plug 'HerringtonDarkholme/yats.vim', { 'for': 'typescript' }
-" Typescript tooling for neovim
-Plug 'mhartington/nvim-typescript', { 'do': './install.sh', 'for': 'typescript' }
-
+"Plug 'HerringtonDarkholme/yats.vim', { 'for': 'typescript' }
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 
 
 " ==== Tools
