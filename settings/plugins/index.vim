@@ -47,14 +47,14 @@ Plug 'godlygeek/tabular',
 Plug 'gabrielelana/vim-markdown', { 'for': ['markdown.mdx', 'markdown'] }
 
 " Typescript syntax
-"Plug 'HerringtonDarkholme/yats.vim', { 'for': 'typescript' }
+"Plug 'HerringtonDarkholme/yats.vim', { 'for': ['typescript', 'typescript.tsx'] }
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 
 
 " ==== Tools
 " Snippets
-Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'javascript'] }
+Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'javascript', 'typescript.tsx'] }
 
 
 
