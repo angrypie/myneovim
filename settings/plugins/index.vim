@@ -6,9 +6,6 @@ Plug 'easymotion/vim-easymotion'
 " Appearance
 Plug 'nanotech/jellybeans.vim'
 
-"Autocompletion
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 " Text Editor behavior
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
@@ -56,6 +53,8 @@ Plug 'peitalin/vim-jsx-typescript'
 " Snippets
 Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'javascript', 'typescript.tsx'] }
 
+"Autocompletion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 
 " Add plugins to &runtimepath
