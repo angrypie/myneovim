@@ -32,6 +32,8 @@ Plug 'prettier/vim-prettier', {
   \ 'branch': 'release/1.x',
   \ 'for': ['javascript', 'typescript', 'css', 'json', 'markdown', 'markdown.mdx', 'html' ] }
 
+Plug 'reasonml-editor/vim-reason-plus', { 'for': 're' }
+
 Plug 'jpalardy/vim-slime', { 'for': 'lisp' }
 
 " Fuzzy find
