@@ -22,7 +22,6 @@ Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 
 " Language support
 " ================
-"Plug 'fatih/vim-go'
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx', {'for': ['javascript'] }
 Plug 'jxnblk/vim-mdx-js', { 'for': ['markdown.mdx'] }
