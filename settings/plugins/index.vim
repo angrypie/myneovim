@@ -1,14 +1,17 @@
 call plug#begin("~/.config/nvim/plugged")
 
+" Pulg is syntax language pack for Vim.
+Plug 'sheerun/vim-polyglot'
 
-Plug 'easymotion/vim-easymotion'
 
-" Appearance
+" Color scheme
 Plug 'nanotech/jellybeans.vim'
 
 " Text Editor behavior
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'easymotion/vim-easymotion'
 
 
 " Appearance
@@ -19,44 +22,27 @@ Plug 'itchyny/lightline.vim'
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 
 
-
 " Language support
 " ================
-Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-Plug 'mxw/vim-jsx', {'for': ['javascript'] }
-Plug 'jxnblk/vim-mdx-js', { 'for': ['markdown.mdx'] }
-Plug 'flowtype/vim-flow', {'for': 'javascript' }
+"Autocompletion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Foramting language
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'branch': 'release/1.x',
   \ 'for': ['javascript', 'typescript', 'css', 'json', 'markdown', 'markdown.mdx', 'html' ] }
 
-Plug 'reasonml-editor/vim-reason-plus', { 'for': 're' }
 
-Plug 'jpalardy/vim-slime', { 'for': 'lisp' }
-
-" Fuzzy find
+"Fuzzy find
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
-Plug 'terryma/vim-multiple-cursors'
-" Markdown
-Plug 'godlygeek/tabular', 
-Plug 'gabrielelana/vim-markdown', { 'for': ['markdown.mdx', 'markdown'] }
+"==== Tools
+"Send text to terminal (tmux etc.)
+Plug 'jpalardy/vim-slime', { 'for': 'lisp' }
 
-" Typescript syntax
-"Plug 'HerringtonDarkholme/yats.vim', { 'for': ['typescript', 'typescript.tsx'] }
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
-
-
-" ==== Tools
-" Snippets
+"Snippets
 Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'javascript', 'typescript.tsx'] }
 
-"Autocompletion
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-
-" Add plugins to &runtimepath
+"Add plugins to &runtimepath
 call plug#end()
