@@ -99,6 +99,7 @@ nmap <silent> gr <Plug>(coc-references)
 " Use `[g` and `]g` to navigate diagnostics
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap <leader>ac  <Plug>(coc-codeaction)
 "Always show sign column
 set signcolumn=yes
 "Highlight errors background
