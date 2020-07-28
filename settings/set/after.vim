@@ -1,6 +1,8 @@
-color jellybeans
-"set termguicolors
-set background=dark
+if (has("termguicolors"))
+	set termguicolors
+endif
+
+colorscheme nord
 
 "===== AUTOCMD ====
 "==================
@@ -16,3 +18,4 @@ autocmd BufWritePre *.re :OR
 
 "easymotion
 map <Leader> <Plug>(easymotion-prefix)
+

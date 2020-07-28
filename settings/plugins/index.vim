@@ -6,8 +6,9 @@ Plug 'sheerun/vim-polyglot'
 
 " Color scheme
 Plug 'nanotech/jellybeans.vim'
+Plug 'arcticicestudio/nord-vim'
 
-" Text Editor behavior
+ "Text Editor behavior
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 Plug 'terryma/vim-multiple-cursors'

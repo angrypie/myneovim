@@ -46,7 +46,8 @@ set incsearch
 let g:slime_target = "tmux"
 
 " Status line
-let g:lightline = { 'colorscheme': 'jellybeans' }
+let g:lightline = { 'colorscheme': 'nord' }
+"let g:lightline = { 'colorscheme': 'jellybeans' }
 
 
 
