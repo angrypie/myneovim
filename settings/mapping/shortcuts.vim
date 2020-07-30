@@ -1,5 +1,4 @@
 ino eu <ESC>
-no <F8> <ESC>:NERDTreeToggle<CR>
 map / <leader>ci
 
 "surround
