@@ -79,6 +79,7 @@ let g:jsx_ext_required = 0
 
 "fzf fuzzy search
 map <C-p> :FZF<CR>
+let $FZF_DEFAULT_COMMAND = 'rg --files'
 
 "vim-javascript
 let g:javascript_plugin_flow = 1
