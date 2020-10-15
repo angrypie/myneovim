@@ -27,12 +27,6 @@ Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 " ================
 "Autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Foramting language
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
-  \ 'branch': 'release/1.x',
-  \ 'for': ['javascript', 'typescript', 'css', 'json', 'markdown', 'markdown.mdx', 'html' ] }
-
 
 "Fuzzy find
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -43,7 +37,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'jpalardy/vim-slime', { 'for': 'lisp' }
 
 "Snippets
-Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'javascript', 'typescript'] }
+Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'javascriptreact', 'typescriptreact'] }
 
 "Add plugins to &runtimepath
 call plug#end()

@@ -81,11 +81,6 @@ let g:jsx_ext_required = 0
 map <C-p> :FZF<CR>
 let $FZF_DEFAULT_COMMAND = 'rg --files'
 
-"vim-javascript
-let g:javascript_plugin_flow = 1
-"flowtype
-let g:flow#autoclose = 1
-
 "coc.nvim settings
 "=================
 " Remap keys for gotos
@@ -106,6 +101,10 @@ nmap <leader>ac  <Plug>(coc-codeaction)
 set signcolumn=yes
 "Highlight errors background
 hi CocUnderline ctermbg=DarkGrey
+
+" coc-prettier
+vmap <leader>p  <Plug>(coc-format-selected)
+nmap <leader>p  :CocCommand prettier.formatFile<CR>
 
 
 let g:multi_cursor_exit_from_insert_mode = 0
