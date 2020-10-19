@@ -8,7 +8,7 @@ colorscheme nord
 "==================
 "au BufRead,BufNewFile *.asm set filetype=nasm
 "Emmet enable just for .html, .css and .tag
-autocmd FileType html,css,tag,javascript,typescript EmmetInstall
+autocmd FileType html,css,tag,javascriptreact,typescriptreact EmmetInstall
 
 autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
 command! -nargs=0 OR :call CocAction('format')
