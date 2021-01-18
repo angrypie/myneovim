@@ -27,6 +27,8 @@ Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 " ================
 "Autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Rescript support
+Plug 'rescript-lang/vim-rescript', { 'for': 'rescript' }
 
 "Fuzzy find
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -37,7 +39,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'jpalardy/vim-slime', { 'for': 'lisp' }
 
 "Snippets
-Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'javascriptreact', 'typescriptreact'] }
+Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'javascriptreact', 'typescriptreact', 'rescript'] }
 
 "Add plugins to &runtimepath
 call plug#end()
