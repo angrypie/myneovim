@@ -84,7 +84,7 @@ let $FZF_DEFAULT_COMMAND = 'rg --files'
 "coc.nvim settings
 "=================
 " Remap keys for gotos
-let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier']
+let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier', 'coc-snippets', 'coc-go']
 "
 "
 nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
