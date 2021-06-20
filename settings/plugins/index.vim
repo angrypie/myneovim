@@ -39,7 +39,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'jpalardy/vim-slime', { 'for': 'lisp' }
 
 "Snippets
-Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'javascriptreact', 'typescriptreact', 'rescript'] }
+Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'javascript',  'javascriptreact', 'typescriptreact', 'rescript'] }
 
 "Add plugins to &runtimepath
 call plug#end()
